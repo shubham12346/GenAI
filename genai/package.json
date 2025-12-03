@@ -1,0 +1,23 @@
+{
+  "name": "genai",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsx index.ts",
+    "dev": "tsx index.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^2.0.76",
+    "@types/node": "^24.10.1",
+    "ai": "^5.0.106",
+    "dotenv": "^17.2.3",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "zod": "^4.1.13"
+  }
+}
