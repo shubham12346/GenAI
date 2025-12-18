@@ -46,7 +46,7 @@ export function isBoardFull(board: Board): boolean {
 }
 
 // Get available moves
-function getAvailableMoves(board: Board): number[] {
+export function getAvailableMoves(board: Board): number[] {
   return board.map((cell, index) => cell === null ? index : -1).filter(index => index !== -1);
 }
 
@@ -315,14 +315,7 @@ export const gpt4TurboAI = createLLMStrategy('gpt-4-turbo', 'GPT-4 Turbo');
 export const gpt4oMiniAI = createLLMStrategy('gpt-4o-mini', 'GPT-4o-mini');
 export const gpt35TurboAI = createLLMStrategy('gpt-3.5-turbo', 'GPT-3.5 Turbo');
 
-// Traditional AI Strategies (non-LLM)
-export const traditionalStrategies: AIStrategy[] = [
-  randomAI,
-  centerFirstAI,
-  defensiveAI,
-  aggressiveAI,
-  minimaxAI
-];
+
 
 // LLM-based Strategies
 export const llmStrategies: AIStrategy[] = [
@@ -335,7 +328,6 @@ export const llmStrategies: AIStrategy[] = [
 
 // Export all strategies combined
 export const aiStrategies: AIStrategy[] = [
-  ...traditionalStrategies,
   ...llmStrategies
 ];
 
