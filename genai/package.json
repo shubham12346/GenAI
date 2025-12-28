@@ -12,10 +12,13 @@
     "dev": "tsx index.ts"
   },
   "dependencies": {
-    "@ai-sdk/openai": "^2.0.76",
+    "@ai-sdk/openai": "^2.0.88",
+    "@chroma-core/default-embed": "^0.1.9",
     "@types/node": "^24.10.1",
     "ai": "^5.0.106",
+    "chromadb": "^3.1.8",
     "dotenv": "^17.2.3",
+    "openai": "^6.15.0",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
     "zod": "^4.1.13"
