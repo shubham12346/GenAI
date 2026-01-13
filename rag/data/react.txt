@@ -1,0 +1,16 @@
+React Reconciliation:
+Reconciliation is the process by which React compares the new virtual DOM
+with the previous one to determine the minimal set of changes required
+to update the real DOM efficiently.
+
+Virtual DOM:
+The virtual DOM is a lightweight JavaScript representation of the real DOM.
+React uses it to batch updates and improve performance.
+
+useMemo:
+useMemo is used to memoize expensive computations to avoid unnecessary
+recalculations during re-renders.
+
+useCallback:
+useCallback is used to memoize functions so they are not recreated on
+every render unless dependencies change.
